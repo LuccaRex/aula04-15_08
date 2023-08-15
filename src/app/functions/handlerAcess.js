@@ -1,10 +1,10 @@
 import Cookies from "js-cookie";
 import { validateToken } from "./validateToken";
-import { getUserAuthenticated } from "./handlerAcessAPI";
+import { getUsers } from "./handlerAcessAPI";
 
 const handlerAcessUser = async (user) => {
 
-    const userAuth = await getUserAuthenticated(user);
+    const userAuth = await getUsers(user);
     
     const isTokenValidate = validateToken(userAuth.token);
 
