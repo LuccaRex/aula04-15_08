@@ -2,7 +2,7 @@
 
 const users = [
     {
-        nome:'Lucca', email:'luccao@gmail.com', password:'luccao', token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
+        nome:'Lucca', email:'lucca@gmail.com', password:'lucca', token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
     },
     {
         nome:'Kauani', email:'kakau@gmail.com', password:'kakau', token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
@@ -15,18 +15,21 @@ const users = [
     }
 ]
 
-const getUserAuthenticated = (users, user) => {
+const getUserAuthenticated = (user) => {
+    let userAuth = {}
     for (let i = 0; i < users.length; i++) {
-        if(users[i].email === user.email && users[i].password === user.password) {
-            return true;
+        if(users[i].email === user.email && users[i].password === user.password) 
+        {
+            userAuth=users[i];
         }
     }
-    return false;
+
+    return userAuth;
 }
 
 const getUsers = (user) =>{
-    const getUserAuthenticated = users.find(u => u.email === user.email && u.password === user.password);
-    return getUserAuthenticated;
+
+    return users;
 }
 
 export { getUsers, getUserAuthenticated };
