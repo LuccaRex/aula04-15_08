@@ -1,6 +1,6 @@
 import Cookies from "js-cookie";
 import { validateToken } from "./validateToken";
-import { getUsers } from "./handlerAcessAPI";
+import { getUserAuthenticated } from "./handlerAcessAPI";
 
 const handlerAcessUser = async (user) => {
 
