@@ -7,6 +7,7 @@ export default async function Dashboard() {
 
             <h1>Dashboard</h1>
 
+            users.map{<div>user.name</div>}
         </div>
     );
 };
