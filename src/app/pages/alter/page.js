@@ -42,7 +42,7 @@ export default async function alter() {
         <span></span>
         <span></span>
         <span></span>
-        alter
+        alterar
           </button>
       </form>
       
