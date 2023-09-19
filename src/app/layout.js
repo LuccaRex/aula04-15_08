@@ -1,4 +1,4 @@
-import './global.css'
+import './style.css'
 
 export const metadata = {
   title: 'middleware',
