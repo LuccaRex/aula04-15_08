@@ -16,7 +16,7 @@ export default async function alter() {
 <Navbar/>
 
     <div className="login_box">
-      <h1>alter</h1>
+      <h1>Alterar</h1>
 
       <form action="" onSubmit={submitEvent}>
         <div className="input_box">

@@ -16,7 +16,7 @@ export default async function register() {
 <Navbar/>
 
     <div className="login_box">
-      <h1>Register</h1>
+      <h1>Cadastrar</h1>
 
       <form action="" onSubmit={submitEvent}>
         <div className="input_box">
@@ -42,7 +42,7 @@ export default async function register() {
         <span></span>
         <span></span>
         <span></span>
-        register
+        Cadastrar
           </button>
       </form>
       
