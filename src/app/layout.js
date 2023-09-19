@@ -1,8 +1,8 @@
-
+import './global.css'
 
 export const metadata = {
-  title: 'Register users',
-  description: 'Project for class PTAC',
+  title: 'middleware',
+  description: 'Projeto PTAC',
 }
 
 export default function RootLayout({ children }) {
