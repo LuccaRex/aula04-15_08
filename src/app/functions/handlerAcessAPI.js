@@ -14,8 +14,10 @@ const getUserAuthenticated = async (user) => {
    return userAuth;
 }
 
-const getUsers = async (user) =>{
-    const responseOfApi = await fetch(url + "/users", {cache:"no-cache"});
+const getUsers = async () =>{
+    const responseOfApi = await fetch(url + "/users", {
+        next: { revalidate: 10 }
+    });
     const userAuth = await responseOfApi.json();
     return userAuth;
 }
