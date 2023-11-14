@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../../components/Navbar";
 import '../../styles.css'
 
-export default async function register() {
+export default function register() {
   const [user, setUser] = useState({
     name:'',
     email:'',
@@ -39,19 +39,19 @@ export default async function register() {
       <form action="" onSubmit={submitEvent}>
         <div className="input_box">
 
-          <input type="text" required />
+          <input type="text" required onChange={(e) => { setUser({ ...user, name: e.target.value }) }} />
           <label htmlFor="">nome</label>
         </div>
 
         <div className="input_box">
 
-          <input type="email" required />
+          <input type="email" required onChange={(e) => { setUser({ ...user, email: e.target.value }) }} />
           <label htmlFor="">E-mail</label>
         </div>
 
         <div className="input_box">
 
-          <input type="password" name="pass" id="" required />
+          <input type="password" name="pass" id="" required onChange={(e) => { setUser({ ...user, password: e.target.value }) }} />
           <label htmlFor="">Senha</label>
         </div>
 
