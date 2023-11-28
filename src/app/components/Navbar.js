@@ -21,7 +21,6 @@ export default function Navbar() {
     <nav id='navbar' class='navbar' role='navigation'>
       <ul class='nav-menu'>
         <li class='nav-menu-item'><a href='/'>Home</a></li>
-        <li class='nav-menu-item'><a href='/pages/alter'>Alterar</a></li>
         <li class='nav-menu-item'><a href='/pages/register'>Cadastrar</a></li>
         <li><button class='logout-button' onClick={handlerRemoveCookies}>Sair</button></li>
       </ul>
